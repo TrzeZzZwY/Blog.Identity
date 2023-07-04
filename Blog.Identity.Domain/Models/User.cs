@@ -10,6 +10,7 @@ namespace Blog.Identity.Domain.Models
     {
         public string Login { get; set; }
         public string Password { get; set; }
+        public string Emial { get; set; }
         public string FirstName { get; set; }
         public string SurName { get; set; }
         public Role Role { get; set; }

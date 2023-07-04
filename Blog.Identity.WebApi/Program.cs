@@ -1,4 +1,4 @@
-using Blog.Identity.Infrastructure.CQRS;
+using Blog.Identity.Application.CQRS;
 namespace Blog.Identity.WebApi
 {
     public class Program

@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog.Identity.Infrastructure.CQRS
+namespace Blog.Identity.Application.CQRS
 {
     public class QueryDispatcher : IQueryDispatcher
     {
         private readonly IServiceProvider _serviceProvider;
-        
+
         public QueryDispatcher(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;

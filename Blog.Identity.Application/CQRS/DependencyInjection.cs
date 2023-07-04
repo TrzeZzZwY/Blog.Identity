@@ -1,4 +1,4 @@
-﻿using Blog.Identity.Infrastructure.CQRS.Handlers;
+﻿using Blog.Identity.Application.CQRS;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog.Identity.Infrastructure.CQRS
+namespace Blog.Identity.Application.CQRS
 {
     public static class DependencyInjection
     {

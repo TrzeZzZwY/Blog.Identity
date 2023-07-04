@@ -1,6 +1,5 @@
-﻿using Blog.Identity.Domain.Models;
-using Blog.Identity.Infrastructure.CQRS;
-using Blog.Identity.Infrastructure.CQRS.Handlers;
+﻿using Blog.Identity.Application.CQRS;
+using Blog.Identity.Application.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 namespace Blog.Identity.WebApi.Controllers

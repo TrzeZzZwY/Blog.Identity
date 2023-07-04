@@ -1,13 +1,11 @@
-﻿using Blog.Identity.Infrastructure.CQRS;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace Blog.Identity.Infrastructure.CQRS
+namespace Blog.Identity.Application.CQRS
 {
     public class CommandDispatcher : ICommandDispatcher
     {

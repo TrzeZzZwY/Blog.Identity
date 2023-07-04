@@ -1,4 +1,5 @@
-﻿using Blog.Identity.Domain.Models;
+﻿using Blog.Identity.Application.CQRS;
+using Blog.Identity.Domain.Models;
 using Blog.Identity.Infrastructure.EF;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog.Identity.Infrastructure.CQRS.Handlers
+namespace Blog.Identity.Application.CQRS
 {
     public class GetAllUsersQuery : IQuery
     {
@@ -66,7 +67,7 @@ namespace Blog.Identity.Infrastructure.CQRS.Handlers
                 if (query.PageSize <= 0) throw new ArgumentException($"The argument {nameof(query.PageSize)} must be grater than 0");
 
                 int totalResult = result.Count();
-                int totalPages = (int)Math.Ceiling(((decimal)totalResult) / query.PageSize);
+                int totalPages = (int)Math.Ceiling((decimal)totalResult / query.PageSize);
                 result = result.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize);
                 users = await result.ToListAsync();
 
@@ -90,7 +91,7 @@ namespace Blog.Identity.Infrastructure.CQRS.Handlers
                     users = null
                 };
             }
-           
+
         }
     }
 }

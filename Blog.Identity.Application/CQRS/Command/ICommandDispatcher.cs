@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blog.Identity.Infrastructure.CQRS
+namespace Blog.Identity.Application.CQRS
 {
     public interface ICommandDispatcher
     {
