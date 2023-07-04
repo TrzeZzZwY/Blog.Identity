@@ -39,7 +39,7 @@ namespace Blog.Identity.WebApi.Controllers
 
             if (result.IsFaulted == true) return BadRequest();
 
-            return Ok(result.users);
+            return Ok(result.users.ToDto());
         }
     }
 }
