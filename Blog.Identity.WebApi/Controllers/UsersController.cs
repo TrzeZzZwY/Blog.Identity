@@ -18,7 +18,7 @@ namespace Blog.Identity.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetAll(
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetAll(
             [FromQuery] string? roleName,
             [FromQuery] string? firstName,
             [FromQuery] string? surName,
